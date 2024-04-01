@@ -5,14 +5,28 @@ const text = document.querySelector("#text")
 const listOfTodo = [];
 let todo ;
 
+function isSumbittingPossible()
+{
+    if(text.value !="")return true;
+    else
+    {
+        alert("You cannot create a task without a name!")
+    }
+    return false;
+}
 function addingATodo()
 {
-    todo= document.createElement("div");
-    todo.classList.add("card")
-    todo.id = "todo";
-    todo.innerHTML = '<h2 id="textOfTodo">'+text.value+'</h2><button class="Btn" id = "remove">X</button>'
-    text.value ="";
-    todos.appendChild(todo);
+    if(isSumbittingPossible())
+    {
+
+        todo= document.createElement("div");
+        todo.classList.add("card")
+        todo.id = "todo";
+        todo.innerHTML = '<h2 id="textOfTodo">'+text.value+'</h2><button class="Btn" id = "remove">X</button>'
+        text.value ="";
+        todos.appendChild(todo);
+    }
+    
 }
 addBtn.addEventListener("click",addingATodo);
 document.addEventListener('keydown', function(event) {
