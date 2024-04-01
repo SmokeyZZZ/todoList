@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root
+{
+    --text-color : white;
+    --card-color:#407076;
+    --background-color :#97B1A6;    
+}
+
+*
+{
+    padding:0;
+    margin:0;
+    text-decoration:none;
+    list-style-type: none;
+    color :  var(--text-color);
+    user-select: none;
+    font-family: "Poppins", sans-serif;
+}
+#textOfTodo
+{
+    font-weight: 500;
+    
+}
+body{
+    display: flex;
+    background-color: #c9c5ba;
+    justify-content: center;
+}
+.card
+{
+    background-color:var(--card-color);
+    margin:30px;
+    border-radius: 10px;
+    padding:20px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#inputArea
+{
+    display: flex;
+    justify-content: space-between;
+    
+}
+#add
+{
+    background-color: var(--background-color);
+}
+#remove
+{
+    
+    background-color: red;
+}
+.Btn
+{
+    
+    padding:1rem;
+    outline: none;
+    border:0;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+}
+#inputArea input
+{
+    border-radius: 10px;
+    border:0;
+    color: black;
+    padding:10px;
+    margin-right:10px;
+    outline:none; 
+    width: 100%;
+}
+#content
+{
+    background-color: var(--background-color);
+    width:500px;
+    min-height: 100vh;
+    max-height: 100%; 
+}
